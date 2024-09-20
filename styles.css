@@ -524,3 +524,44 @@ nav li {
         margin: 5px 0; /* تباعد أقل بين العناصر */
     }
 }
+/* تنسيق القائمة */
+nav {
+    background-color: rgba(40, 40, 40, 0.9); /* لون خلفية القائمة */
+    padding: 1rem 0; /* تباعد داخلي */
+}
+
+nav ul {
+    display: flex; /* استخدام flexbox */
+    justify-content: space-between; /* توزيع العناصر بالتساوي */
+    list-style-type: none; /* إزالة النقاط */
+    padding: 0; /* إزالة التباعد */
+    margin: 0; /* إزالة التباعد */
+}
+
+nav li {
+    margin: 0 10px; /* تباعد بين العناصر */
+}
+
+.nav-link {
+    color: #ffffff; /* لون النص */
+    text-decoration: none; /* إزالة التسطير */
+    padding: 10px 15px; /* تباعد داخلي للروابط */
+    border-radius: 5px; /* حواف مستديرة */
+    transition: background-color 0.3s; /* تأثير عند التمرير */
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* لون الخلفية عند التمرير */
+}
+
+/* تحسين الاستجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+        align-items: center; /* توسيط العناصر */
+    }
+
+    nav li {
+        margin: 5px 0; /* تباعد أقل */
+    }
+}
