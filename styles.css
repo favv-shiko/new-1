@@ -393,3 +393,60 @@ html {
 @media (max-width: 768px) {
     /* أضف تعديلات التصميم هنا */
 }
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* حجم خط أصغر */
+    }
+    
+    .container {
+        padding: 1rem; /* تباعد أقل */
+    }
+
+    nav ul {
+        flex-direction: column; /* تحويل القائمة إلى عمودية */
+        align-items: center; /* توسيط العناصر */
+    }
+
+    nav li {
+        margin: 10px 0; /* تباعد عمودي */
+    }
+
+    .section {
+        padding: 2rem 1rem; /* تباعد داخلي أقل */
+    }
+
+    .screenshot img {
+        max-width: 100%; /* صورة تتناسب مع العرض */
+        height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    }
+}
+img {
+    max-width: 100%; /* يضمن أن الصورة لا تتجاوز عرض الشاشة */
+    height: auto; /* يحافظ على نسبة العرض إلى الارتفاع */
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* للتوزيع الأفقي */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* تحويل القائمة إلى عمودية */
+    }
+}
+.section {
+    padding: 4rem 2rem;
+    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 2rem 1rem; /* تباعد داخلي أقل */
+    }
+}
