@@ -591,11 +591,39 @@ nav li {
     background-color: #45a049; /* لون الزر عند التمرير */
     transform: translateY(-2px); /* تحريك الزر لأعلى عند التمرير */
 }
+/* تحسين شكل الأيقونة داخل إطار */
+.game-icon-container {
+    display: inline-block;
+    padding: 10px; /* مسافة داخلية للإطار */
+    background-color: #f9f9f9; /* لون خلفية الإطار */
+    border: 2px solid #ddd; /* إطار خفيف */
+    border-radius: 20px; /* حواف دائرية */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ظل للإطار */
+    margin-bottom: 20px; /* مسافة تحت الإطار */
+}
+
 .game-icon {
-    width: 100px; /* حجم ثابت للأيقونة */
-    height: 100px; /* نفس الطول والعرض */
-    border-radius: 20%; /* حواف مستديرة */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* تأثير الظل */
-    object-fit: cover; /* تغطية الحاوية مع الحفاظ على نسبة العرض إلى الارتفاع */
-    margin-bottom: 20px; /* مسافة أسفل الأيقونة */
+    width: 100px; /* حجم الأيقونة */
+    height: 100px;
+    border-radius: 20%; /* حواف دائرية للأيقونة */
+    object-fit: cover; /* تغطية كاملة للصورة */
+}
+
+/* تحسين زر "العب الآن" */
+.play-button {
+    display: inline-block;
+    padding: 14px 28px; /* زيادة الحواف */
+    margin-top: 20px;
+    background-color: #28a745; /* لون الزر */
+    color: white; /* لون النص */
+    text-decoration: none; /* إزالة التسطير */
+    border-radius: 30px; /* حواف دائرية أكثر */
+    font-size: 18px; /* حجم الخط */
+    transition: background-color 0.3s, transform 0.3s; /* تأثير التغيير عند التمرير */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* ظل خفيف للزر */
+}
+
+.play-button:hover {
+    background-color: #218838; /* تغيير لون الزر عند التمرير */
+    transform: translateY(-3px); /* تحريك الزر لأعلى عند التمرير */
 }
