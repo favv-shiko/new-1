@@ -450,3 +450,25 @@ nav ul {
         padding: 2rem 1rem; /* تباعد داخلي أقل */
     }
 }
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* تقليل الحواف الداخلية */
+    }
+
+    nav li {
+        display: block; /* جعل العناصر في قائمة التنقل تتكدس عموديًا */
+        margin: 5px 0; /* مسافة بين العناصر */
+    }
+
+    .section {
+        padding: 2rem 1rem; /* تقليل المسافة حول الأقسام */
+    }
+
+    h2 {
+        font-size: 20px; /* تقليل حجم العناوين */
+    }
+
+    p {
+        font-size: 14px; /* تقليل حجم النصوص */
+    }
+}
