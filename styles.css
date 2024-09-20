@@ -472,3 +472,17 @@ nav ul {
         font-size: 14px; /* تقليل حجم النصوص */
     }
 }
+@media (max-width: 768px) {
+    .section {
+        padding: 2rem 1rem; /* تقليل التباعد الداخلي */
+        font-size: 14px; /* تقليل حجم الخط */
+    }
+    nav ul {
+        flex-direction: column; /* تغيير اتجاه القائمة */
+        align-items: center; /* توسيط العناصر */
+    }
+    .message-box, .tech-blog-box {
+        margin: 10px; /* تقليل المسافة بين العناصر */
+        padding: 15px; /* تقليل التباعد الداخلي */
+    }
+}
