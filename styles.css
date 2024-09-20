@@ -387,3 +387,9 @@ html {
 html {
     scroll-behavior: smooth; /* يجعل التمرير سلسًا */
 }
+@media (max-width: 768px) {
+    /* أضف تعديلات التصميم هنا */
+}
+@media (max-width: 768px) {
+    /* أضف تعديلات التصميم هنا */
+}
