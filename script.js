@@ -82,4 +82,22 @@ particlesJS('particles-js',
       },
       "retina_detect": true
     });
-    
+    function addComment() {
+      const username = document.getElementById("username").value;
+      const comment = document.getElementById("comment").value;
+      
+      if (username && comment) {
+          const commentDiv = document.createElement("div");
+          commentDiv.classList.add("comment");
+          commentDiv.innerHTML = `<strong>${username}</strong><p>${comment}</p>`;
+          
+          document.getElementById("comments").appendChild(commentDiv);
+          
+          // Clear the form
+          document.getElementById("username").value = '';
+          document.getElementById("comment").value = '';
+      } else {
+          alert("يرجى ملء جميع الحقول.");
+      }
+  }
+  
