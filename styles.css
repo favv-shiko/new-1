@@ -574,3 +574,28 @@ nav li {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     background-color: rgba(240, 240, 240, 0.5); /* تغيير لون الخلفية عند التحويم */
 }
+.play-button {
+    display: inline-block;
+    padding: 12px 24px; /* زيادة الحواف */
+    margin-top: 20px;
+    background-color: #4CAF50; /* اللون الخلفي */
+    color: white; /* لون النص */
+    text-decoration: none; /* إزالة التسطير */
+    border-radius: 8px; /* زوايا دائرية */
+    font-size: 18px; /* حجم الخط */
+    transition: background-color 0.3s, transform 0.3s; /* تأثير التغيير */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+}
+
+.play-button:hover {
+    background-color: #45a049; /* لون الزر عند التمرير */
+    transform: translateY(-2px); /* تحريك الزر لأعلى عند التمرير */
+}
+.game-icon {
+    width: 100px; /* حجم ثابت للأيقونة مثل iOS */
+    height: 100px; /* نفس الطول والعرض */
+    border-radius: 20%; /* حواف مستديرة لتشبه iOS */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* تأثير ظل بسيط مثل iOS */
+    object-fit: cover; /* جعل الصورة تناسب الحاوية مع الحفاظ على نسبة العرض إلى الارتفاع */
+    margin-bottom: 20px; /* مسافة أسفل الأيقونة */
+}
