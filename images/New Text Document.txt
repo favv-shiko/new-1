@@ -1,0 +1,97 @@
+/* خلفية الموقع */
+/* خلفية متحركة باستخدام CSS */
+@keyframes backgroundMove {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+
+body {
+    background-color: #000; /* اللون الأسود للخلفية */
+    background: url('images/binary-code-falling.3840x2160.gif') no-repeat center center fixed;
+    background-size: cover;
+    animation: backgroundMove 30s linear infinite;
+    color: #fff; /* اللون الأبيض للنص */
+}
+
+/* تنسيق الرأس */
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* خلفية سوداء شفافة للرأس */
+    color: #f7d750; /* لون النص أصفر */
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+nav ul li a {
+    color: #f7d750; /* لون أصفر للنص */
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: #e6c72f; /* لون أغمق عند المرور بالماوس */
+}
+
+/* تنسيق الأقسام */
+.section {
+    padding: 4rem 2rem;
+    margin: 1rem auto;
+    background-color: rgba(0, 0, 0, 0.8); /* خلفية سوداء شفافة للأقسام */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* ظل خفيف أبيض */
+    max-width: 800px;
+    color: #fff; /* اللون الأبيض للنص */
+}
+
+section h2 {
+    border-bottom: 3px solid #f7d750; /* خط تحت العنوان باللون الأصفر */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* تنسيق النموذج */
+form input, form textarea {
+    background-color: #333; /* خلفية داكنة للحقول */
+    color: #fff; /* نص أبيض داخل الحقول */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f7d750; /* لون أصفر فاتح */
+    color: #000; /* لون النص الأسود */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e6c72f; /* لون أغمق عند المرور بالماوس */
+}
+
+/* تنسيق التذييل */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8); /* خلفية سوداء شفافة */
+    color: #f7d750; /* لون النص أصفر */
+}
+
+footer a:hover {
+    color: #e6c72f; /* لون أغمق عند المرور بالماوس */
+}
+
+/* تأثيرات الحركة */
+.section {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* تنسيق روابط وسائل التواصل الاجتماعي */
+.social-icon:hover {
+    color: #f7d750; /* لون أصفر فاتح عند المرور بالماوس */
+    transform: scale(1.2); /* تكبير الأيقونة عند المرور بالماوس */
+}

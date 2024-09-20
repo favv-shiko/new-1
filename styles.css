@@ -1,0 +1,389 @@
+/* إعدادات عامة */
+/* إعدادات عامة */
+body {
+    background-color: #2c3e50;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* خلف كل المحتوى */
+}
+
+/* تنسيق الرأس */
+header {
+    background-color: rgba(40, 40, 40, 0.9); /* لون خلفية الشعار */
+    color: #ffffff;
+    padding: 1.5rem 0;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* تنسيق الروابط في القائمة */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff; /* لون النص */
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* لون خلفية التأثير */
+}
+
+/* تنسيق الأقسام */
+.section {
+    padding: 4rem 2rem;
+    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0.95); /* لون الخلفية للـ section */
+    border-radius: 25px; /* الحواف المستديرة */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* الظلال */
+    max-width: 900px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تصميم صندوق الرسائل العصري */
+.message-box {
+    background: #ffffff; /* لون الخلفية للصندوق */
+    color: #000000; /* لون النص */
+    padding: 20px 30px; /* تباعد داخلي */
+    border-radius: 15px; /* حواف مستديرة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* الظلال */
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.message-box:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-top: 15px solid #ffffff;
+    border-right: 15px solid transparent;
+    transform: translateY(100%);
+}
+
+/* تنسيق العناوين */
+h2 {
+    color: #000000; /* لون العناوين */
+}
+
+.colored-title {
+    color: #000000; /* لون العناوين الفرعية */
+    padding-bottom: 10px;
+}
+
+/* الفاصل بين الأقسام */
+.divider {
+    border: none;
+    height: 2px;
+    background: #000000; /* لون الفاصل */
+    margin: 20px 0;
+}
+
+/* شريط الصور */
+.screenshot-slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.screenshot {
+    display: none;
+}
+
+.screenshot img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* الأسهم للتنقل بين الصور */
+.prev, .next {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* تنسيق أيقونات السوشيال ميديا */
+.social-links {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.social-icon {
+    font-size: 2em;
+    color: #000000; /* لون الأيقونات */
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #f39c12; /* لون الأيقونات عند التمرير */
+}
+
+/* تنسيق مستطيل "شارك أفكارك بشكل مجهول" */
+.ngl-section {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #4ca1af, #c2c2f0); /* مزيج ألوان خلفية */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ngl-button {
+    background-color: #ffffff; /* لون زر NGL */
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.ngl-button:hover {
+    background-color: #f39c12; /* لون الزر عند التمرير */
+}
+
+/* تنسيق مستطيل "التكنولوجيا المستخدمة" و "مدونة" */
+.tech-blog-box {
+    background: #ffffff; /* لون الخلفية للصندوق */
+    color: #000000; /* لون النص */
+    padding: 20px 30px; /* تباعد داخلي */
+    border-radius: 20px; /* حواف مستديرة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* الظلال */
+    margin-bottom: 20px;
+}
+
+.tech-blog-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tech-blog-box ul li {
+    margin-bottom: 10px;
+}
+
+.tech-blog-box ul li i {
+    margin-right: 10px;
+    color: #f39c12; /* لون الأيقونات */
+}
+
+.tech-blog-box a {
+    color: #4ca1af; /* لون الروابط */
+    text-decoration: none;
+}
+
+.tech-blog-box a:hover {
+    text-decoration: underline;
+}
+
+/* تنسيق الفوتر */
+footer {
+    background-color: rgba(255, 255, 255, 0); /* لون خلفية الفوتر */
+    color: #000000;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+/* تأثير التحريك عند التمرير بالفأرة */
+.message-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.message-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.tech-blog-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-blog-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+/* تأثير التحريك للصور في شريط الصور */
+.screenshot-slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.screenshot {
+    display: none;
+    animation: slide 1.5s ease-in-out infinite;
+}
+
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    50% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.screenshot img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.screenshot img:hover {
+    transform: scale(1.05);
+}
+/* إعداد الوضع الليلي الافتراضي */
+body.dark-mode {
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .section {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.theme-toggle {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#toggle-theme {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-theme:hover {
+    background-color: #e67e22;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white; /* يمكنك تعديل اللون إذا كان مختلفًا */
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2); /* تنسيق الخلفية */
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#religion {
+    background-color: rgba(255, 255, 255, 0.95); /* لون الخلفية مثل باقي الخانات */
+    padding: 30px; /* تباعد داخلي */
+    border-radius: 25px; /* حواف مستديرة مثل باقي الخانات */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* الظل */
+    margin: 20px auto; /* توسيط الخانة */
+    max-width: 900px; /* أقصى عرض */
+    animation: fadeIn 1s ease-in-out; /* تأثير التحريك */
+    text-align: center; /* لتوسيع النص في المنتصف */
+}
+
+#religion h2 {
+    color: #000; /* لون العنوان */
+    font-size: 24px; /* حجم العنوان */
+    margin-bottom: 10px; /* مسافة تحت العنوان */
+}
+
+#religion p {
+    color: #000; /* لون النص */
+    font-size: 16px; /* حجم النص */
+    line-height: 1.6; /* ارتفاع السطر */
+}
+html {
+    scroll-behavior: smooth; /* يجعل التمرير سلسًا */
+}
+/* تنسيق خانة التحديثات */
+#updates {
+    background-color: rgba(255, 255, 255, 0.95); /* لون الخلفية مثل باقي الخانات */
+    padding: 30px; /* تباعد داخلي */
+    border-radius: 25px; /* حواف مستديرة مثل باقي الخانات */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* الظل */
+    margin: 20px auto; /* توسيط الخانة */
+    max-width: 900px; /* أقصى عرض */
+    animation: fadeIn 1s ease-in-out; /* تأثير التحريك */
+    text-align: center; /* لتوسيع النص في المنتصف */
+}
+
+#updates h2 {
+    color: #000; /* لون العنوان */
+    font-size: 24px; /* حجم العنوان */
+    margin-bottom: 10px; /* مسافة تحت العنوان */
+}
+
+#updates p {
+    color: #000; /* لون الوصف بالأسود */
+    font-size: 16px; /* حجم النص */
+    line-height: 1.6; /* ارتفاع السطر */
+}
+
+html {
+    scroll-behavior: smooth; /* يجعل التمرير سلسًا */
+}
