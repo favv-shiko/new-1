@@ -100,4 +100,56 @@ particlesJS('particles-js',
           alert("يرجى ملء جميع الحقول.");
       }
   }
-  
+  function toggleTheme() {
+    document.body.classList.toggle('dark-theme');
+}
+const themeToggleButton = document.getElementById('themeToggle');
+
+function toggleTheme() {
+    document.body.classList.toggle('dark-theme');
+
+    // تغيير نص الزر حسب السمة
+    if (document.body.classList.contains('dark-theme')) {
+        themeToggleButton.innerText = 'الوضع الفاتح';
+    } else {
+        themeToggleButton.innerText = 'الوضع الداكن';
+    }
+}
+
+// تعيين النص بناءً على السمة الافتراضية عند تحميل الصفحة
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.body.classList.contains('dark-theme')) {
+        themeToggleButton.innerText = 'الوضع الفاتح';
+    } else {
+        themeToggleButton.innerText = 'الوضع الداكن';
+    }
+});
+window.addEventListener('scroll', function() {
+  const button = document.getElementById('themeToggle');
+  const scrollY = window.scrollY;
+
+  // إذا تم التمرير لأسفل، اجعل الزر يختفي، وإذا تم التمرير لأعلى، اجعله يظهر
+  if (scrollY > 100) {
+      button.style.transform = 'translateY(100px)'; // اخفاء الزر
+  } else {
+      button.style.transform = 'translateY(0)'; // إظهار الزر
+  }
+});
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+});
+const themeButton = document.getElementById('theme-button');
+const themeOptions = document.getElementById('theme-options');
+
+themeButton.addEventListener('click', () => {
+    themeOptions.style.display = themeOptions.style.display === 'block' ? 'none' : 'block';
+});
+
+document.querySelectorAll('.theme').forEach(theme => {
+    theme.addEventListener('click', () => {
+        const selectedTheme = theme.getAttribute('data-theme');
+        document.body.className = selectedTheme; // تغيير الثيم حسب اختيار المستخدم
+        themeOptions.style.display = 'none'; // إخفاء الخيارات بعد الاختيار
+    });
+});

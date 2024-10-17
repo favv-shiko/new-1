@@ -696,3 +696,141 @@ nav li {
 .comment:hover {
     transform: scale(1.02); /* تكبير التعليق عند المرور */
 }
+.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
+
+/* سمات الأنيميشن */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.three-d-shape {
+    width: 100px; 
+    height: 100px; 
+    background-color: red;
+    transform: perspective(600px) rotateY(45deg); /* تأثير ثلاثي الأبعاد */
+    transition: transform 0.3s;
+}
+
+.three-d-shape:hover {
+    transform: perspective(600px) rotateY(0deg); /* عند التحويم */
+}
+#themeToggle {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* لون الخلفية */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* زوايا مدورة */
+    cursor: pointer; /* شكل المؤشر */
+    transition: background-color 0.3s; /* تأثير الانتقال */
+}
+
+#themeToggle:hover {
+    background-color: #45a049; /* لون الخلفية عند التحويم */
+}
+.animated-button {
+    background-color: transparent; /* جعل الخلفية شفافة */
+    border: none; /* إزالة الحدود */
+    cursor: pointer; /* شكل المؤشر */
+    outline: none; /* إزالة التأطير */
+    position: fixed; /* تثبيت الزر */
+    bottom: 20px; /* المسافة من الأسفل */
+    right: 20px; /* المسافة من اليمين */
+    transition: transform 0.2s; /* تأثير الانتقال */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل */
+    border-radius: 50%; /* شكل دائري */
+    width: 50px; /* عرض الزر */
+    height: 50px; /* ارتفاع الزر */
+}
+
+.animated-button:hover {
+    transform: scale(1.1); /* تكبير الزر عند التحويم */
+}
+
+.animated-button:active {
+    transform: scale(0.95); /* تصغير الزر عند الضغط */
+}
+
+/* إضافة صورة للزر */
+.animated-button {
+    background-image: url('path_to_your_icon.png'); /* مسار أيقونة الزر */
+    background-size: cover; /* ضبط حجم الخلفية */
+}
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+body.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+.theme-selector {
+    position: relative;
+}
+
+#theme-button {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-options {
+    display: none;
+    position: absolute;
+    background: #333;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 10;
+}
+
+.theme {
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.theme:hover {
+    transform: scale(1.1);
+}
+
+/* ثيمات */
+.berry { background: linear-gradient(to right, #9b59b6, #8e44ad); }
+.candy { background: linear-gradient(to right, #ff6b6b, #ffb6b6); }
+.unicorn { background: linear-gradient(to right, #00b09b, #96c93d); }
+/* أضف بقية الثيمات هنا */
+body {
+    border-radius: 20px;
+    overflow: hidden; /* لضمان عدم ظهور زوايا حادة */
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+.berry {
+    background: linear-gradient(to right, #9b59b6, #8e44ad);
+}
+
+.candy {
+    background: linear-gradient(to right, #ff6b6b, #ffb6b6);
+}
+
+.unicorn {
+    background: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+/* أضف بقية الثيمات هنا */
+body {
+    border-radius: 20px;
+    overflow: hidden; /* لضمان عدم ظهور زوايا حادة */
+}

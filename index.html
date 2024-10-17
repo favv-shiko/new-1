@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css"> <!-- مثال لربط ملف CSS -->
 </head>
 <body>
     <div id="particles-js"></div>
@@ -25,11 +27,25 @@
                     <li><a href="#religion">الدين</a></li> 
                     <li><a href="#العابي">العابي</a></li>
                     <li><a href="#updates">التحديثات</a></li> 
+                    <button id="theme-toggle" class="theme-toggle">🌈</button>
                 </ul>
             </nav>
         </div>
     </header>
-
+    <div class="theme-selector">
+        <button id="theme-button">تغيير الثيم</button>
+        <div class="theme-options" id="theme-options">
+            <div class="theme" data-theme="berry"></div>
+            <div class="theme" data-theme="candy"></div>
+            <div class="theme" data-theme="unicorn"></div>
+            <div class="theme" data-theme="tropical"></div>
+            <div class="theme" data-theme="maple"></div>
+            <div class="theme" data-theme="sushi"></div>
+            <div class="theme" data-theme="rocket"></div>
+            <div class="theme" data-theme="citrus"></div>
+            <div class="theme" data-theme="lollipop"></div>
+        </div>
+    </div>    
     <section id="about" class="section">
         <div class="container">
             <div class="message-box">
@@ -152,6 +168,14 @@
                 <a href="https://www.youtube.com/@Quran.1486" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
                 <a href="https://www.tiktok.com/@favv_msry" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
             </div>
+            <section class="social-media">
+                <!-- الأيقونات هنا -->
+                <div class="video-container">
+                  <video controls width="100%">
+                    <source src="your-video-url.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                  </video>
+                </div>              
             <div class="comments-section">
                 <h2>آراء الزوار</h2>
                 <div class="comment-form">
@@ -219,6 +243,22 @@
                 <!-- أضف تحديثات أخرى حسب الحاجة -->
             </ul>
         </div>
-    </section>              
+    </section>       
+    <script>
+        const themeButton = document.getElementById('theme-button');
+        const themeOptions = document.getElementById('theme-options');
+
+        themeButton.addEventListener('click', () => {
+            themeOptions.style.display = themeOptions.style.display === 'block' ? 'none' : 'block';
+        });
+
+        document.querySelectorAll('.theme').forEach(theme => {
+            theme.addEventListener('click', () => {
+                const selectedTheme = theme.getAttribute('data-theme');
+                document.body.className = selectedTheme; // تغيير الثيم حسب اختيار المستخدم
+                themeOptions.style.display = 'none'; // إخفاء الخيارات بعد الاختيار
+            });
+        });
+    </script>       
 </body>
 </html>
