@@ -834,3 +834,705 @@ body {
     border-radius: 20px;
     overflow: hidden; /* لضمان عدم ظهور زوايا حادة */
 }
+html, body {
+    overflow: auto; /* Ensure scrolling is allowed */
+    height: 100%; 
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+body {
+    background: url('background.svg') no-repeat center center fixed;
+    background-size: cover;
+}
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade.show {
+    opacity: 1;
+}
+body {
+    background: linear-gradient(135deg, #f5af19, #f12711); /* تدرج جذاب */
+    font-family: 'Arial', sans-serif; /* خط بسيط وأنيق */
+}
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif; /* خط للعناوين */
+}
+p, a {
+    font-family: 'Roboto', sans-serif; /* خط للنصوص */
+}
+button {
+    background-color: #f12711; /* لون جذاب */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* تأثير ظل */
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+.navbar a:hover {
+    color: #f12711; /* تغيير اللون عند التمرير */
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item {
+    flex: 1 1 30%; /* ثلاثة عناصر في السطر */
+    margin: 10px;
+}
+.background {
+    position: relative;
+}
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.background:hover::before {
+    opacity: 1; /* إظهار الظل عند التمرير */
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.8); /* لون الخلفية عند التمرير */
+}
+.social-share a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #f12711;
+    transition: color 0.3s;
+}
+.social-share a:hover {
+    color: #333; /* تغيير اللون عند التمرير */
+}
+.button {
+    background-color: #f12711; /* لون الخلفية */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #333; /* لون الخلفية عند التمرير */
+    transform: scale(1.05); /* تكبير الزر قليلاً */
+}
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* رفع البطاقة عند التمرير */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* تحسين الظل */
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    flex: 1 1 calc(33.33% - 20px);
+    margin: 10px;
+}
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f12711;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    animation: fadeIn 1s;
+}
+.fancy-button {
+    background-color: #f12711;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.fancy-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.sticky-nav ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+.sticky-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.sticky-nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.notification {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    z-index: 1000;
+}
+/* 1. تأثيرات تمرير الصفحة */
+.scroll-effect {
+    transition: transform 0.5s ease;
+}
+
+.scroll-effect.in-view {
+    transform: translateY(0);
+}
+
+.scroll-effect.out-of-view {
+    transform: translateY(100px);
+}
+/* 2. حركة العناصر عند التفاعل */
+.interactive-element:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+/* 3. تأثيرات الخلفية المتحركة */
+.background-animation {
+    background-image: url('path/to/your/background.gif'); /* استخدام صورة متحركة */
+}
+/* 4. نصوص متحركة */
+.moving-text {
+    animation: move 10s infinite;
+}
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+/* 5. تأثير الزوم عند الضغط */
+.zoom-effect:active {
+    transform: scale(0.9);
+}
+/* 7. تأثيرات اهتزاز */
+.shake-effect {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+/* 10. تأثيرات بصرية متعددة */
+.visual-effect {
+    transition: opacity 0.5s;
+}
+
+.visual-effect:hover {
+    opacity: 0.5;
+}
+/* 11. خلفية متغيرة الألوان */
+@keyframes colorChange {
+    0% { background-color: #ff0000; }
+    50% { background-color: #00ff00; }
+    100% { background-color: #0000ff; }
+}
+
+.color-change {
+    animation: colorChange 10s infinite;
+}
+/* 14. أزرار تفاعلية */
+.button-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.button-effect:after {
+    content: '';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: -150%;
+    left: -150%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: transform 0.5s;
+    transform: scale(0);
+    border-radius: 50%;
+}
+
+.button-effect:hover:after {
+    transform: scale(1);
+}
+/* 18. تأثيرات مضيئة عند الضغط على الأزرار */
+.button:hover {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+}
+/* 35. إضافة تأثيرات التلاشي */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+/* 36. استخدام فلاتر CSS */
+.filter-effect {
+    filter: blur(5px);
+    transition: filter 0.3s;
+}
+
+.filter-effect:hover {
+    filter: none;
+}
+/* 39. تأثيرات CSS لجعل النص يتفاعل مع الماوس */
+.interactive-text:hover {
+    color: #ff0000; /* تغيير اللون عند التمرير */
+    text-shadow: 0 0 5px #ff0000;
+}
+/* 41. إضافة تأثيرات الوضوح */
+.blur-effect {
+    filter: blur(5px);
+}
+
+.clear-effect {
+    filter: blur(0);
+}
+/* 42. رسوم متحركة عند التفاعل مع العناصر */
+.animated-element {
+    transition: transform 0.3s;
+}
+
+.animated-element:hover {
+    transform: scale(1.1);
+}
+/* 43. عناصر دائرية تتفاعل مع الماوس */
+.circular-button {
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.circular-button:hover {
+    background-color: #f0f0f0; /* تغيير اللون عند التمرير */
+}
+/* 45. تأثيرات التمرير العمودي */
+.scroll-vertical {
+    overflow-y: auto;
+    height: 300px; /* ارتفاع العنصر */
+}
+/* 46. إضافة نصوص مبهرة */
+.stunning-text {
+    animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #fff; }
+    50% { text-shadow: 0 0 20px #ff0000; }
+    100% { text-shadow: 0 0 5px #fff; }
+}
+/* 47. تأثيرات الأزرار الفريدة */
+.unique-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.unique-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+/* 48. إضافة تأثيرات التركيز */
+.focus-effect:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff0000;
+}
+/* 50. إضافة نصوص متحركة من اليمين لليسار */
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.marquee h2 {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+/* 53. استخدام فلاتر الملون */
+.color-filter {
+    filter: brightness(1.5);
+}
+/* 57. تأثيرات الدائرة */
+.circle-effect {
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.circle-effect:hover {
+    background-color: #ff0000; /* تغيير اللون عند التمرير */
+}
+/* 59. تأثيرات الانزلاق */
+.slide-in {
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* 61. تأثيرات النص المتلألئ */
+.glowing-text {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+}
+/* 62. تأثيرات العبور */
+.transition-effect {
+    transition: all 0.5s;
+}
+
+.transition-effect:hover {
+    transform: scale(1.05);
+}
+/* 63. تصميم عناصر ذات زوايا مستديرة */
+.rounded-corners {
+    border-radius: 10px;
+}
+/* 64. تأثيرات دائرية */
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #ff0000;
+    border-radius: 50%;
+}
+/* 67. تأثيرات الإضاءة */
+.light-effect {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+/* 68. تأثيرات دوران العناصر */
+.rotate-effect {
+    transition: transform 0.5s;
+}
+
+.rotate-effect:hover {
+    transform: rotate(15deg);
+}
+/* 69. تأثيرات التحجيم */
+.scale-effect {
+    transition: transform 0.3s;
+}
+
+.scale-effect:hover {
+    transform: scale(1.1);
+}
+/* 72. إضافة شارات */
+.badge {
+    background-color: #ff0000;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+/* 73. إضافة تأثيرات العمود الفقري */
+.spine-effect {
+    transform: rotate(15deg);
+}
+/* 75. إضافة مؤثرات حركة للمرور */
+.transition-on-hover {
+    transition: transform 0.2s;
+}
+
+.transition-on-hover:hover {
+    transform: translateY(-5px);
+}
+/* 76. إضافة تأثيرات زخرفية */
+.decorative-border {
+    border: 2px dashed #ff0000;
+}
+/* 78. استخدام إطارات CSS */
+.frame {
+    border: 5px solid #000;
+    padding: 10px;
+}
+/* 79. تأثيرات النبض */
+.pulse {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+/* 80. تأثيرات ارتفاع الخط */
+.line-height-effect {
+    line-height: 2;
+}
+/* 81. استخدام الرسوم المتحركة للصور */
+.img-animation {
+    animation: zoom 1s;
+}
+
+@keyframes zoom {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+}
+/* 83. تأثيرات مائية */
+.water-effect {
+    background: url('path/to/water-texture.png');
+}
+/* 85. تأثيرات الرسوم المتحركة للنصوص */
+.text-animation {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* 87. إضافة تأثيرات الفقاعات */
+.bubble {
+    position: relative;
+}
+
+.bubble::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    animation: bubble 2s infinite;
+}
+
+@keyframes bubble {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50px); }
+}
+/* 89. إضافة تأثيرات زهور */
+.flower-effect {
+    background-image: url('path/to/flower.png');
+    background-size: cover;
+}
+/* 90. إضافة تأثيرات التوزيع */
+.spread-effect {
+    transition: transform 0.5s;
+}
+
+.spread-effect:hover {
+    transform: scale(1.1);
+}
+/* 91. إضافة مؤثرات رياضية */
+.sport-effect {
+    background: url('path/to/sport.jpg');
+    background-size: cover;
+}
+/* 92. تأثيرات الضباب */
+.fog-effect {
+    filter: blur(5px);
+}
+/* 93. إضافة تأثيرات الأنماط */
+.pattern-effect {
+    background-image: url('path/to/pattern.png');
+}
+/* 94. استخدام الدوائر */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #ff0000;
+    border-radius: 50%;
+}
+/* 95. إضافة تأثيرات الفصول */
+.seasonal-effect {
+    transition: background-color 0.5s;
+}
+
+.seasonal-effect:hover {
+    background-color: #ffcc00; /* تأثير الربيع */
+}
+/* 96. استخدام عناصر متحركة */
+.moving-element {
+    position: relative;
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+    0% { left: 0; }
+    100% { left: 100px; }
+}
+/* 97. إضافة تأثيرات الشفافية */
+.transparent-effect {
+    opacity: 0.5;
+}
+/* 98. إضافة مؤثرات اللمعان */
+.shiny-effect {
+    background-color: #ffcc00;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+}
+/* 100. إضافة تأثيرات متطورة */
+.advanced-effect {
+    transition: all 0.5s ease-in-out;
+}
+
+.advanced-effect:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
